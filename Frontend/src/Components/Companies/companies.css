@@ -1,0 +1,55 @@
+.comapniesSec {
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    min-width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.comapniesSec h2{
+    margin: 30px;
+    padding: 3px 18px;
+    border-left: 8px solid brown;
+    border-right: 6px double brown;
+}
+
+.companiesCont{
+    min-width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.sngl-cmpni{
+    width: 150px;
+    border-radius: 50%;
+    height: 150px;
+    outline-offset: 2px;
+    outline: 2px solid firebrick;
+    cursor: pointer;
+}
+
+.samsung{
+    outline: 2px solid rgb(0, 0, 216);
+}
+
+.sngl-cmpni:hover{
+    outline: 6px solid firebrick;
+}
+
+.samsung:hover{
+    outline: 6px solid rgb(0, 0, 216);
+}
+
+.sngl-cmpni img{
+    width: 100%;
+    border-radius: 50%;
+    height: 150px;
+    object-fit: cover;
+}

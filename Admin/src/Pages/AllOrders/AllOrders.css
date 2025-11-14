@@ -1,0 +1,51 @@
+.ordr-head-cont {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    padding: 30px 8px 20px 8px;
+}
+
+.legend {
+    font-size: 1rem;
+    color: blue;
+    padding: 0px 2px;
+}
+
+fieldset {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1.2fr 1.2fr 1fr 1fr;
+    gap: 20px;
+}
+
+.AddressDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.ordrBtns {
+    min-width: 120px;
+    padding: 3px 15px;
+    margin-top: 10px;
+    display: block;
+    border: 1.5px solid blue;
+    color: blue;
+    background-color: rgba(0, 0, 255, 0.137);
+    cursor: pointer;
+}
+
+.delBtn{
+    color: red;
+    border: 2px solid red;
+    background-color: rgba(255, 0, 0, 0.137);
+}
+
+.ordrBtns:active{
+    background-color: blue;
+    color: whitesmoke;
+}
+
+fieldset img{
+    width: 100px;
+}

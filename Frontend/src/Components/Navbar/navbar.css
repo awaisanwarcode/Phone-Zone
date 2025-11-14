@@ -1,0 +1,183 @@
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px 5px 10px;
+    gap: 30px;
+    z-index: 1;
+    position: absolute;
+    padding-top: 8px;
+    width: 100%;
+    background-color: firebrick;
+}
+
+.sideNav {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid whitesmoke;
+    background: black;
+    top: 41px;
+    width: 123px;
+    color: whitesmoke;
+    justify-self: flex-end;
+    padding: 20px;
+    justify-content: center;
+    gap: 10px;
+    right: 2px;
+}
+
+.sideNav p {
+    cursor: pointer;
+}
+
+.sideNav a,
+.sideNav p {
+    padding: 10px;
+}
+
+.sideNav a:hover,
+.sideNav p:hover {
+    background-color: whitesmoke;
+    color: black;
+    min-width: 100px;
+}
+
+.sideNav hr {
+    width: 98%;
+    display: block;
+    margin: auto;
+}
+
+.menuBar {
+    display: none;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 2px;
+    top: 7px;
+    align-items: center;
+    justify-content: center;
+    border: 1.5px solid whitesmoke;
+    color: whitesmoke;
+    z-index: 1;
+    background-color: black;
+}
+
+.menuBar:active {
+    background-color: whitesmoke;
+    color: black;
+}
+
+.cross {
+    font-size: 32px;
+}
+
+.hidden {
+    display: none;
+}
+
+.nav-left {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: whitesmoke;
+    background-image: url("http://localhost:4000/pr0ducts/ShopLogo-white-png.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    cursor: pointer;
+    height: 40px;
+    width: 130px;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    padding-right: 10px;
+}
+
+.nav-right a {
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1 ease-in;
+    cursor: pointer;
+    padding: 6px 16px;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+#cartIcon {
+    font-size: 25px;
+    padding-bottom: 12px;
+}
+
+.dot {
+    width: 18px;
+    height: 18px;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    right: 46px;
+    font-size: 13px;
+    top: 2px;
+}
+
+.nav-right a:hover {
+    border-bottom: 3px solid red;
+}
+
+.Shoplogo {
+    width: 130px;
+    margin-top: 6px;
+}
+
+@media (min-width : 730px) {
+    .sideNav {
+        display: none;
+    }
+}
+
+@media (min-width : 730px) {
+    .nav-right {
+        display: flex;
+    }
+
+}
+
+
+
+@media (min-width : 290px) and (max-width : 730px) {
+    nav {
+        padding: 0px;
+        background: transparent;
+    }
+
+    .nav-left {
+        margin-left: 3px;
+        border-radius: 20px;
+        background-image: url("http://localhost:4000/pr0ducts/ShopLogo-png.png");
+        background-size: contain;
+        padding: 4px;
+    }
+
+    .nav-right {
+        display: none;
+    }
+
+    .menuBar {
+        cursor: pointer;
+        display: flex;
+    }
+}

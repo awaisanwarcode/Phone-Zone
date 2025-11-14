@@ -1,0 +1,90 @@
+footer {
+    background-color: darkred;
+    margin-top: 130px;
+    padding: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 400px;
+    gap: 8px;
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+footer hr {
+    height: 1.5px;
+    width: 98%;
+    background-color: white;
+}
+
+.footer-top-div {
+    height: 80%;
+    width: 98%;
+    display: flex;
+    align-items: center;
+}
+
+.footer-first-div {
+    width: 50%;
+    padding: 10px 20px;
+    margin-right: 10px;
+}
+
+.footer-first-div h2 {
+    margin-bottom: 8px;
+}
+
+.footer-first-div p {
+    font-size: 0.9rem;
+}
+
+.footer-sec-div,
+.footer-third-div {
+    margin-left: 20px;
+    width: 20%;
+}
+
+.footer-sec-div h3,
+.footer-third-div h3 {
+    margin-bottom: 6px;
+}
+
+.footer-sec-div div,
+.footer-third-div div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding-left: 6px;
+}
+
+.footer-third-div {
+    height: 104px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-last-div {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 0.88rem;
+}
+
+@media (min-width : 290px) and (max-width : 700px) {
+    footer {
+        height: auto;
+    }
+
+    .footer-top-div {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .footer-first-div,
+    .footer-sec-div,
+    .footer-third-div {
+        margin-top: 60px;
+        width: auto;
+    }
+}

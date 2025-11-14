@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Outfit:wght@100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: Outfit;
+}
+
+#root {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.img-Sec {
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#Su-sec {
+    background-image: url("https://images.pexels.com/photos/20348034/pexels-photo-20348034.jpeg");
+}
+
+#Ap-sec {
+    background-image: url("https://images.pexels.com/photos/15916262/pexels-photo-15916262.jpeg");
+}
+
+a {
+    outline: none;
+    color: inherit;
+}
+
+@media (min-width : 290px) and (max-width : 725px) {
+    #Su-sec {
+        background-image: url("http://localhost:4000/pr0ducts/small-screen-samsung.jpg");
+    }
+
+    #Ap-sec {
+        background-image: url("http://localhost:4000/pr0ducts/1758939213667.jpg");
+    }
+
+}
