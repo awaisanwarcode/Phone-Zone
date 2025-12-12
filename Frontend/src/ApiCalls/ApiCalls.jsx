@@ -87,7 +87,7 @@ export const AddUserAddress = (Address, image, orderId, ordrKey) => {
                 alert("Your order is completed , you can track your order by calling us or you will be informed via your email.")
                 window.location.href = "/";
             }).catch((err) => {
-                alert("Something went wrong.");
+                alert("Something went wrong. Go Back to home page and try again.");
                 window.location.reload();
             })
         }

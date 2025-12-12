@@ -1,0 +1,12 @@
+# Ignore environment file/folder
+.env
+.env/
+
+# Ignore Scripts folder
+Scripts/
+
+# Ignore Products folder
+Products/
+
+# Ignore node_modules
+node_modules/
