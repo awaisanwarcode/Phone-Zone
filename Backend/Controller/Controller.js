@@ -2,7 +2,7 @@ import { MongoClient } from "mongodb";
 import * as fun from "../Functions/Functions.js";
 import fs from "fs";
 import path from "path";
-const client = new MongoClient("mongodb://localhost:27017");
+const client = new MongoClient(process.env.DB_URL);
 const db = client.db(process.env.DB);
 const PColl = db.collection(process.env.P_C);
 const OColl = db.collection(process.env.O_C);
